@@ -4,6 +4,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 50px;
+}
+
+.article {
+	display: grid;
+	grid-template-columns: 270px 500px;
+	gap: 30px;
 }
 
 .desktopBackground {
@@ -23,7 +30,6 @@
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	width: 270px;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -41,4 +47,112 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.section {
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+}
+
+.sectionWrapper {
+	background-color: var(--color-main);
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.usedText {
+	color: white;
+	font-size: 14px;
+}
+
+.capacity {
+	font-weight: bold;
+	margin: 0 3px;
+}
+
+.bar {
+	position: relative;
+	width: 450px;
+}
+
+.outerBar {
+	position: absolute;
+	width: 450px;
+	height: 20px;
+	background-color: var(--color-accent);
+	border-radius: 10px;
+}
+
+.innerBar {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 360px;
+	height: 12px;
+	background: linear-gradient(
+		to right,
+		var(--color-left-slider),
+		var(--color-right-slider)
+	);
+	border-radius: 10px;
+}
+
+.indicator {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	border-radius: 50%;
+	top: 5px;
+	left: 352px;
+}
+
+.numbers {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+
+.number {
+	position: relative;
+	top: 24px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.leftText {
+	position: absolute;
+	top: 10px;
+	right: 24px;
+	padding: 15px 20px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.figureText {
+	font-size: 14px;
+	color: gray;
+	font-weight: 500;
+}
+
+.figure {
+	color: var(--color-accent);
+	font-size: 36px;
+	font-weight: 700;
+	margin-right: 5px;
+}
+
+.arrow {
+	position: absolute;
+	background-color: white;
+	width: 30px;
+	height: 30px;
+	bottom: -20px;
+	right: 0;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
 }
