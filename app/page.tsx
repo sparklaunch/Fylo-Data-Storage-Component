@@ -3,6 +3,7 @@ import desktopBackground from "./assets/images/desktop-background.png";
 import document from "./assets/images/document.svg";
 import folder from "./assets/images/folder.svg";
 import logo from "./assets/images/logo.svg";
+import mobileBackground from "./assets/images/mobile-background.png";
 import upload from "./assets/images/upload.svg";
 import styles from "./Home.module.css";
 
@@ -14,6 +15,11 @@ export default function Home() {
 					src={desktopBackground}
 					alt=""
 					className={styles.desktopBackground}
+				/>
+				<Image
+					src={mobileBackground}
+					alt=""
+					className={styles.mobileBackground}
 				/>
 				<header className={styles.header}>
 					<Image src={logo} alt="Fylo Logo" />
